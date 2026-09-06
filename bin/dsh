@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# dsh launcher: run DeepSeek Harness from its source checkout.
+# Usage: dsh [args...]  (e.g. dsh web, dsh --profile headless "...")
+
+DEEPSEEK_HARNESS_ROOT=/home/xyh/agents/deepseek-harness
+
+if [ ! -d "$DEEPSEEK_HARNESS_ROOT" ]; then
+  echo "dsh: DeepSeek Harness checkout not found at $DEEPSEEK_HARNESS_ROOT" >&2
+  exit 1
+fi
+
+cd "$DEEPSEEK_HARNESS_ROOT"
+exec node --import tsx/esm apps/cli/src/bin.ts "$@"
