@@ -1,26 +1,26 @@
 ---
 name: coding-guideline
-description: Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication and to surface assumptions.
+description: 用于减少 LLM 常见编码错误的行为准则。在编写、审查或重构代码时使用，以避免过度复杂化并主动暴露假设。
 ---
 
-## 1. Think Before Coding
+## 1. 先思考，再写代码
 
-**Don't assume. Don't hide confusion. Surface tradeoffs.**
+**不要臆测。不要隐藏困惑。把权衡摆到台面上。**
 
-Before implementing:
-- State your assumptions explicitly. If uncertain, ask.
-- If multiple interpretations exist, present them - don't pick silently.
-- If a simpler approach exists, say so. Push back when warranted.
-- If something is unclear, stop. Name what's confusing. Ask.
+动手实现之前：
+- 明确说出你的假设。不确定就问。
+- 若存在多种理解，把它们都列出来 —— 不要默默挑一个。
+- 若有更简单的做法，就说出来。该反对时就要反对。
+- 若有不清楚的地方，停下来。指出到底哪里令人困惑，然后提问。
 
-## 2. Simplicity First
+## 2. 简单优先
 
-**Minimum code that solves the problem. Nothing speculative.**
+**用最少的代码解决问题。不做任何投机性的设计。**
 
-- No features beyond what was asked.
-- No abstractions for single-use code.
-- No "flexibility" or "configurability" that wasn't requested.
-- No error handling for impossible scenarios.
-- If you write 200 lines and it could be 50, rewrite it.
+- 不要做需求之外的功能。
+- 不要为只用一次的代码造抽象。
+- 不要做没人要求的"灵活性"或"可配置性"。
+- 不要为不可能发生的情况写错误处理。
+- 如果你写了 200 行而其实 50 行就够，就重写它。
 
-Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
+问自己："资深工程师会不会说这过度复杂了？"如果会，就简化。
