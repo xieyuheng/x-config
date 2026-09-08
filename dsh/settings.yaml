@@ -1,0 +1,40 @@
+ui-onboarding:
+  welcomeNoticeVersion: 2026-08-13.1
+agent-presets:
+  default: minimal
+locale:
+  preference: zh
+ui-theme:
+  preference: dark
+llm-pi-ai:
+  providers:
+    siliconflow:
+      displayName: siliconflow
+      apiKeyEnv: SILICONFLOW_API_KEY
+      api: openai-completions
+      baseURL: https://api.siliconflow.cn/v1
+      models:
+        - id: deepseek-ai/DeepSeek-V4-Flash
+        - id: deepseek-ai/DeepSeek-V4-Pro
+    opencode:
+      apiKeyEnv: OPENCODE_API_KEY
+llm-deepseek:
+  models:
+    - id: deepseek-v4-flash
+    - id: deepseek-v4-pro
+    - id: deepseek-v4-flash-vision-exp
+    - id: deepseek-v4.1-flash-expires-on-0910
+      name: DeepSeek-V4.1-Flash（中间版内测）
+      inputModalities: [ 'text', 'image' ]
+      imagePixelBudget: 640000
+      imageMaxBytes: 1048576
+agent-default-model:
+  provider: deepseek-official
+  model: deepseek-v4.1-flash-expires-on-0910
+  reasoningEffort: high
+shell:
+  timeoutMs: 300000
+ui-conversation:
+  busyEnter: steer
+ui-chat:
+  transcriptView: normal
