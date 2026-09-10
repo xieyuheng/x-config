@@ -20,17 +20,11 @@ llm-pi-ai:
       apiKeyEnv: OPENCODE_API_KEY
 llm-deepseek:
   models:
-    - id: deepseek-v4-flash
-    - id: deepseek-v4-pro
-    - id: deepseek-v4-flash-vision-exp
-    - id: deepseek-v4.1-flash-expires-on-0910
-      name: DeepSeek-V4.1-Flash（中间版内测）
+    - id: deepseek-flash
       inputModalities: [ 'text', 'image' ]
-      imagePixelBudget: 640000
-      imageMaxBytes: 1048576
 agent-default-model:
   provider: deepseek-official
-  model: deepseek-v4.1-flash-expires-on-0910
+  model: deepseek-flash
   reasoningEffort: high
 shell:
   timeoutMs: 300000
