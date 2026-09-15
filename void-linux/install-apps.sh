@@ -3,6 +3,7 @@ set -euo pipefail
 
 base=(
     rsync xz tree
+    make unzip
 )
 
 shell=(
@@ -14,7 +15,7 @@ editor=(
 )
 
 vcs=(
-    git tig
+    git tig lazygit
 )
 
 lang=(
@@ -22,23 +23,29 @@ lang=(
 )
 
 network=(
-    ntp NetworkManager
+    ntp NetworkManager bind-utils
     wget curl proxychains-ng
+)
+
+proxy=(
+    shadowsocks-libev sing-box
 )
 
 cli=(
     fzf ugrep the_silver_searcher
     fastfetch htop btop ncdu
     amber onefetch
+    jq yt-dlp tmux parallel
 )
 
 dev=(
     clang valgrind cloc gdb libsanitizer libsanitizer-devel
     libX11-devel SDL2-devel
+    nasm fasm global
 )
 
 media=(
-    mpv ffmpeg
+    mpv ffmpeg vlc mpv-mpris
 )
 
 fonts=(
@@ -47,13 +54,17 @@ fonts=(
 
 docs=(
     zathura zathura-djvu zathura-pdf-mupdf zathura-ps
+    okular
     djview calibre
-    goldendict
+    goldendict-ng
 )
 
 desktop=(
     niri foot dbus
+    noctalia fuzzel rofi
     xwayland-satellite brillo
+    imv wl-clipboard
+    elogind seatd
     xdg-desktop-portal xdg-desktop-portal-gtk
     xdg-desktop-portal-termfilechooser
 )
@@ -61,11 +72,11 @@ desktop=(
 audio=(
     alsa-utils
     pipewire wireplumber libspa-bluetooth alsa-pipewire
-    pulseaudio-utils
+    pulseaudio-utils libjack-pipewire
 )
 
 browser=(
-    chromium firefox
+    chromium firefox google-chrome
 )
 
 input=(
@@ -75,6 +86,10 @@ input=(
     fcitx5-rime
 )
 
+power=(
+    tlp powertop
+)
+
 sudo xbps-install -y \
     "${base[@]}" \
     "${shell[@]}" \
@@ -82,6 +97,7 @@ sudo xbps-install -y \
     "${vcs[@]}" \
     "${lang[@]}" \
     "${network[@]}" \
+    "${proxy[@]}" \
     "${cli[@]}" \
     "${dev[@]}" \
     "${media[@]}" \
@@ -90,4 +106,5 @@ sudo xbps-install -y \
     "${desktop[@]}" \
     "${audio[@]}" \
     "${browser[@]}" \
-    "${input[@]}"
+    "${input[@]}" \
+    "${power[@]}"
