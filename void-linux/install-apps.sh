@@ -1,7 +1,7 @@
 sudo xbps-install \
     rsync fish-shell emacs-pgtk ranger xz \
     git tig nodejs \
-    ntp \
+    ntp NetworkManager \
     mpv ffmpeg tree wget curl \
     fzf \
     clang valgrind cloc gdb libsanitizer libsanitizer-devel \
