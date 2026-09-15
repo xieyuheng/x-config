@@ -1,0 +1,6 @@
+[filechooser]
+cmd=ranger-wrapper.sh
+default_dir=$HOME
+env=TERMCMD=foot -a termfilechooser
+open_mode=suggested
+save_mode=last

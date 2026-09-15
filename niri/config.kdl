@@ -252,6 +252,15 @@ window-rule {
     open-floating true
 }
 
+// File chooser (xdg-desktop-portal-termfilechooser -> foot + ranger):
+// open as a centered floating window instead of a tiled/fullscreen one.
+window-rule {
+    match app-id=r#"^termfilechooser$"#
+    open-floating true
+    default-column-width { proportion 0.7; }
+    default-window-height { proportion 0.7; }
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
