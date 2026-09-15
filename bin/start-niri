@@ -4,4 +4,5 @@
 # such as xdg-desktop-portal. Without it, portal backends start without a
 # Wayland display and file chooser dialogs never appear (file uploads break).
 export XDG_CURRENT_DESKTOP=niri
-exec dbus-run-session -- niri --session
+# exec dbus-run-session -- niri --session
+exec dbus-run-session -- niri

@@ -23,7 +23,6 @@ sudo xbps-install \
     niri foot dbus \
     xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome \
     xdg-desktop-portal-termfilechooser \
-    gnome-keyring nautilus \
     chromium firefox \
     fcitx5 fcitx5-chinese-addons fcitx5-cloudpinyin fcitx5-configtool \
     fcitx5-gtk \
