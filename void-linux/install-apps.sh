@@ -21,7 +21,7 @@ sudo xbps-install \
     pipewire wireplumber libspa-bluetooth alsa-pipewire \
     pulseaudio-utils \
     niri foot dbus \
-    xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome \
+    xdg-desktop-portal xdg-desktop-portal-gtk \
     xdg-desktop-portal-termfilechooser \
     chromium firefox \
     fcitx5 fcitx5-chinese-addons fcitx5-cloudpinyin fcitx5-configtool \
