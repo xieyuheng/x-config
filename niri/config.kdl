@@ -188,11 +188,9 @@ environment {
 // via /etc/pipewire/pipewire.conf.d/ drop-ins.
 spawn-at-startup "pipewire"
 
-// spawn-at-startup "waybar"
 spawn-at-startup "noctalia"
 spawn-at-startup "fcitx5" "-d"
 spawn-at-startup "brillo" "-I"
-// spawn-at-startup "bash" "/home/xyh/.wallpapers/swaybg-loop.sh"
 
 spawn-at-startup "niri-start-apps"
 
@@ -233,16 +231,6 @@ animations {
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Window-Rules
-
-// Work around WezTerm's initial configure bug
-// by setting an empty default-column-width.
-window-rule {
-    // This regular expression is intentionally made as specific as possible,
-    // since this is the default config, and we want no false positives.
-    // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {

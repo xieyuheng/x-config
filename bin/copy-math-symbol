@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-cat $HOME/assets/menus/math-symbol.menu |\
-dmenu -p 'copy math symbol' -fn unifont-16 -l 20 -i |\
-awk '{print $1}' |\
-tr -d '\n' |\
-xclip -selection clipboard

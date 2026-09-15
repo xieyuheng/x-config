@@ -1,6 +1,0 @@
-#include ".Xresources.d/dpi"
-#include ".Xresources.d/colors"
-#include ".Xresources.d/urxvt"
-#include ".Xresources.d/st"
-#include ".Xresources.d/xterm"
-
