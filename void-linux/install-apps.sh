@@ -18,8 +18,8 @@ sudo xbps-install \
     amber onefetch \
     xorg xorg-fonts \
     alsa-utils \
-    pipewire wireplumber libspa-bluetooth alsa-pipewire helvum \
-    pulseaudio-utils ncpamixer pavucontrol \
+    pipewire wireplumber libspa-bluetooth alsa-pipewire \
+    pulseaudio-utils \
     niri foot dbus \
     xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome \
     xdg-desktop-portal-termfilechooser \
