@@ -256,6 +256,12 @@ window-rule {
     default-column-width { proportion 0.5; }
 }
 
+// foot terminals open at half of the output width.
+window-rule {
+    match app-id=r#"^foot$"#
+    default-column-width { proportion 0.5; }
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
