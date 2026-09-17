@@ -9,11 +9,18 @@ binds {
     Alt+Shift+c repeat=false { close-window; }
     // Mod+Q repeat=false { close-window; }
 
+    // Mod+U              { focus-workspace-down; }
+    // Mod+I              { focus-workspace-up; }
+    // Mod+Ctrl+U         { move-column-to-workspace-down; }
+    // Mod+Ctrl+I         { move-column-to-workspace-up; }
+    // Mod+Shift+U         { move-workspace-down; }
+    // MOD+Shift+I         { move-workspace-up; }
+
     Alt+Left  { focus-column-left; }
     Alt+Right { focus-column-right; }
     Alt+Down  { focus-workspace-down; }
     Alt+Up    { focus-workspace-up; }
-    Alt+H     { focus-column-left; }
+    ALT+H     { focus-column-left; }
     Alt+L     { focus-column-right; }
     Alt+J     { focus-workspace-down; }
     Alt+K     { focus-workspace-up; }
@@ -26,6 +33,11 @@ binds {
     Alt+Shift+L     { move-column-right; }
     Alt+Shift+J     { move-column-to-workspace-down; }
     Alt+Shift+K     { move-column-to-workspace-up; }
+
+    Alt+Ctrl+Down  { move-workspace-down; }
+    Alt+Ctrl+Up    { move-workspace-up; }
+    Alt+Ctrl+J     { move-workspace-down; }
+    Alt+Ctrl+K     { move-workspace-up; }
 
     // Mod+Left  { focus-column-left; }
     // Mod+Right { focus-column-right; }
@@ -62,13 +74,6 @@ binds {
     // Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
     // Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
     // Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
-
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
-    Mod+Ctrl+U         { move-column-to-workspace-down; }
-    Mod+Ctrl+I         { move-column-to-workspace-up; }
-    Mod+Shift+U         { move-workspace-down; }
-    Mod+Shift+I         { move-workspace-up; }
 
     // You can bind mouse wheel scroll ticks using the following syntax.
     // These binds will change direction based on the natural-scroll setting.
