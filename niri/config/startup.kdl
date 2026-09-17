@@ -1,0 +1,17 @@
+// Add lines like this to spawn processes at startup.
+// Note that running niri as a session supports xdg-desktop-autostart,
+// which may be more convenient to use.
+// See the binds section below for more spawn examples.
+
+// Audio: pipewire auto-starts wireplumber and pipewire-pulse
+// via /etc/pipewire/pipewire.conf.d/ drop-ins.
+spawn-at-startup "pipewire"
+
+spawn-at-startup "noctalia"
+spawn-at-startup "fcitx5" "-d"
+spawn-at-startup "brillo" "-I"
+
+spawn-at-startup "niri-start-apps"
+
+// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"

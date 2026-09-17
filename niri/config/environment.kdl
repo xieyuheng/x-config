@@ -1,0 +1,9 @@
+// Input method environment, matching the X11 session (.xinitrc / environment.d).
+// fcitx5 GTK module renders the candidate popup at the current cursor position,
+// unlike GTK's built-in im-wayland which often reports a stale position.
+environment {
+    XDG_SESSION_TYPE "wayland"
+    GTK_IM_MODULE "fcitx"
+    QT_IM_MODULE "fcitx"
+    XMODIFIERS "@im=fcitx"
+}

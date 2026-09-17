@@ -1,0 +1,5 @@
+// Cursor theme and size, matching the X11 session (Xcursor.theme/size in Xresources).
+cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 24
+}

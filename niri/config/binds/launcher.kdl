@@ -1,0 +1,13 @@
+// 启动程序类快捷键
+binds {
+    // Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
+    // Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn-sh "rofi -show run -font 'unifont 18'"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+
+    Alt+Shift+Return hotkey-overlay-title="Open a Terminal: foot" { spawn-sh "foot -D \"$(niri-cwd)\""; }
+    Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn-sh "foot"; }
+    Alt+Ctrl+Return hotkey-overlay-title="Run an Application: rofi" { spawn-sh "rofi -show run -font 'unifont 18'"; }
+    Alt+Shift+x { spawn "emacsclient" "-c" "-e" "(eshell t)"; }
+
+    Mod+A hotkey-overlay-title="DeepSeek Chat" { spawn-sh "deepseek"; }
+}
