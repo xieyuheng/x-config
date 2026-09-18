@@ -25,6 +25,7 @@ lang=(
 network=(
     ntp NetworkManager bind-utils
     wget curl proxychains-ng
+    avahi avahi-utils nss-mdns
 )
 
 proxy=(
