@@ -34,10 +34,10 @@ binds {
     Alt+Shift+J     { move-column-to-workspace-down; }
     Alt+Shift+K     { move-column-to-workspace-up; }
 
-    Alt+Ctrl+Down  { move-workspace-down; }
-    Alt+Ctrl+Up    { move-workspace-up; }
-    Alt+Ctrl+J     { move-workspace-down; }
-    Alt+Ctrl+K     { move-workspace-up; }
+    Mod+Ctrl+Down  { move-workspace-down; }
+    Mod+Ctrl+Up    { move-workspace-up; }
+    Mod+Ctrl+J     { move-workspace-down; }
+    Mod+Ctrl+K     { move-workspace-up; }
 
     // Mod+Left  { focus-column-left; }
     // Mod+Right { focus-column-right; }
@@ -131,6 +131,7 @@ binds {
 
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
+        
 
     // While maximize-column leaves gaps and borders around the window,
     // maximize-window-to-edges doesn't: the window expands to the edges of the screen.
