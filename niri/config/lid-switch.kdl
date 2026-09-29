@@ -1,0 +1,8 @@
+switch-events {
+    lid-close {
+        spawn "niri" "msg" "output" "eDP-1" "off"
+    }
+    lid-open {
+        spawn "niri" "msg" "output" "eDP-1" "on"
+    }
+}

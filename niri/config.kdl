@@ -5,6 +5,7 @@
 // 设备与输出
 include "config/input.kdl"
 include "config/outputs.kdl"
+include "config/lid-switch.kdl"
 
 // 布局与外观
 include "config/layout.kdl"
