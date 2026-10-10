@@ -11,7 +11,10 @@ spawn-at-startup "noctalia"
 spawn-at-startup "fcitx5" "-d"
 spawn-at-startup "brillo" "-I"
 
-spawn-at-startup "niri-start-apps"
+spawn-at-startup "goldendict-ng"
+spawn-at-startup "chromium"
+spawn-at-startup "firefox"
+spawn-at-startup "emacs"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
