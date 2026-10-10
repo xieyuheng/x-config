@@ -1,9 +1,19 @@
 // Input method environment, matching the X11 session (.xinitrc / environment.d).
-// fcitx5 GTK module renders the candidate popup at the current cursor position,
-// unlike GTK's built-in im-wayland which often reports a stale position.
+//
+// Do NOT set GTK_IM_MODULE=fcitx.  On Wayland fcitx5's GTK module draws the
+// candidate popup client-side (Gtk3InputWindow).  GTK3 cannot move an already
+// shown xdg_popup, so the module hides + moves + shows it whenever the cursor
+// rect changes.  Emacs PGTK moves the cursor as the preedit grows, so that
+// hide/show fired on every keystroke and the candidate box flickered/jittered.
+//
+// Leaving GTK_IM_MODULE unset lets GTK3 use its built-in Wayland im module
+// (text-input-v3).  fcitx5's waylandim frontend then shows the candidate popup
+// as a compositor-placed input-popup surface, which does not flicker.  Verified
+// with `env -u GTK_IM_MODULE emacs -Q` on niri 26.04 + fcitx5 5.1.21 + emacs 31.1.
+//
+// X11/XWayland and Qt apps keep working through XMODIFIERS / QT_IM_MODULE.
 environment {
     XDG_SESSION_TYPE "wayland"
-    GTK_IM_MODULE "fcitx"
     QT_IM_MODULE "fcitx"
     XMODIFIERS "@im=fcitx"
 }
