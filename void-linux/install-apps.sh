@@ -62,7 +62,7 @@ docs=(
 
 desktop=(
     niri foot dbus
-    noctalia fuzzel rofi
+    fuzzel rofi
     xwayland-satellite brillo
     imv wl-clipboard
     elogind seatd
@@ -77,7 +77,7 @@ audio=(
 )
 
 browser=(
-    chromium firefox google-chrome
+    chromium firefox
 )
 
 input=(
