@@ -20,6 +20,7 @@ vcs=(
 
 lang=(
     nodejs
+    nodejs-devel    
 )
 
 network=(
