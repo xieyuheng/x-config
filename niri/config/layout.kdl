@@ -48,7 +48,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        width 1
+        width 2
         active-color "#ffc87f"
         inactive-color "#505050"
     }
