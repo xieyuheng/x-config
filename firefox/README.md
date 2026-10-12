@@ -2,9 +2,12 @@
 
 ## 按 Alt 不要开启 menu
 
-在 Firefox 地址栏输入 about:config，
-按回车，然后点击“接受风险并继续”。
-
+地址栏输入 about:config，接受风险提示。
 在搜索框中输入 ui.key.menuAccessKeyFocuses。
+将其值从 true 修改为 false。
 
-双击该配置项，将其值从 true 修改为 false。
+## 关闭崩溃恢复
+
+地址栏输入 about:config，接受风险提示。
+搜索 browser.sessionstore.resume_from_crash。
+将其值从 true 修改为 false。
