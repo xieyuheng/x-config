@@ -1,1 +1,1 @@
-set PATH $PATH $HOME/windbell/bin
+set PATH $PATH $HOME/.windbell/bin
