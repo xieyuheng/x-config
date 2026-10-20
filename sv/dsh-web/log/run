@@ -1,5 +1,5 @@
 #!/bin/sh
-exec svlogd -tt /var/log/dsh-web
+exec svlogd -tt /home/xyh/var/log/dsh-web
 
 
 
