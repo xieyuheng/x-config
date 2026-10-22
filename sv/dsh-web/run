@@ -1,4 +1,4 @@
 #!/bin/sh
 exec 2>&1
 cd /home/xyh/others/deepseek-ai/deepseek-harness
-exec /usr/bin/npx dsh web --no-open
+exec /usr/bin/node --import tsx/esm apps/cli/src/bin.ts web --no-open
