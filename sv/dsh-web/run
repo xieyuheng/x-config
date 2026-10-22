@@ -1,5 +1,4 @@
 #!/bin/sh
 exec 2>&1
-export HOME=/home/xyh
 cd /home/xyh/others/deepseek-ai/deepseek-harness
-exec chpst -u xyh:xyh /usr/bin/node --import tsx/esm apps/cli/src/bin.ts web
+exec /usr/bin/npx dsh web --no-open
