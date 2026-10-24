@@ -1,2 +1,2 @@
 #!/bin/sh
-exec svlogd -tt /home/xyh/var/log/windbell
+exec svlogd -ttt /home/xyh/var/log/windbell
