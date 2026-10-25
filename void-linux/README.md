@@ -30,5 +30,4 @@ HandleLidSwitch=ignore
 HandleLidSwitchExternalPower=ignore
 HandleLidSwitchDocked=ignore
 EOF
-sudo sv restart elogind
 ```
